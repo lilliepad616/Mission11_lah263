@@ -4,10 +4,16 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link href="/lib/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
     <div>
-        @RenderBody()
+        <div class="bg-dark text-white p-2">
+            <center><span class="navbar-brand ml-2">Hilton's Bookstore</span></center>
+        </div>
+                @RenderBody()
+            </div>
+        </div>
     </div>
 </body>
 </html>
