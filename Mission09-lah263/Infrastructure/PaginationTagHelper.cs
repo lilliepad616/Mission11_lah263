@@ -52,6 +52,7 @@ namespace Mission09_lah263.Infrastructure
                     tb.AddCssClass(i == PageCount.CurrentPage
                         ? PageClassSelected : PageClassNormal);
                 }
+                tb.AddCssClass(PageClass);
                 tb.InnerHtml.Append(i.ToString());
 
                 final.InnerHtml.AppendHtml(tb);
