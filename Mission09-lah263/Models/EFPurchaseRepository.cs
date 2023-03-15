@@ -9,7 +9,6 @@ namespace Mission09_lah263.Models
     public class EFPurchaseRepository : IPurchaseRepository
     {
         private BookstoreContext context;
-        private Purchase purchase;
 
         public EFPurchaseRepository(BookstoreContext temp)
         {

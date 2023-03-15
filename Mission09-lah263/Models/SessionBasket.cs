@@ -38,9 +38,9 @@ namespace Mission09_lah263.Models
             Session.SetJson("Basket", this);
         }
 
-        public override void ClearBasket(Book book)
+        public override void ClearBasket()
         {
-            base.ClearBasket(book);
+            base.ClearBasket();
             Session.Remove("Basket");
         }
     }

@@ -25,7 +25,7 @@ namespace Mission09_lah263.Controllers
         }
 
         [HttpPost]
-        public IActionResult Checkout(Purchase purchase, Book book)
+        public IActionResult Checkout(Purchase purchase)
         {
             if (basket.Items.Count() == 0)
             {
@@ -35,7 +35,7 @@ namespace Mission09_lah263.Controllers
             {
                 purchase.Lines = basket.Items.ToArray();
                 repo.SavePurchase(purchase);
-                basket.ClearBasket(book);
+                basket.ClearBasket();
 
                 return RedirectToPage("/PurchaseCompleted");
             }

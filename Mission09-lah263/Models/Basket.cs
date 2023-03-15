@@ -35,7 +35,7 @@ namespace Mission09_lah263.Models
             Items.RemoveAll(x => x.Book.BookId == book.BookId);
         }
 
-        public virtual void ClearBasket(Book book)
+        public virtual void ClearBasket()
         {
             Items.Clear();
         }
